@@ -1,4 +1,4 @@
-// Copyright 2018 the Charts project authors. Please see the AUTHORS file
+u// Copyright 2018 the Charts project authors. Please see the AUTHORS file
 // for details.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -131,7 +131,7 @@ class SimpleLegendEntryLayout implements LegendEntryLayout {
         : null;
     if (isHidden) {
       // Use a default color for hidden legend entries if none is provided.
-      color ??= Theme.of(context).textTheme.bodyText2!.color;
+      color ??= Theme.of(context).textTheme.bodyMedium?.color;
       color = color!.withOpacity(0.26);
     }
 
